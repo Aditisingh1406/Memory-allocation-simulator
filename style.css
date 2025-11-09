@@ -1,0 +1,105 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  margin: 0;
+}
+
+.container {
+  background:#727777;
+  padding: 30px;
+  max-width: 1200px;
+  margin: auto;
+  box-shadow: 0 0 10px black;
+}
+
+input, button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  color: #333;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #e0e0e0;
+}
+
+.visual-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  margin-top: 30px;
+}
+
+.visual-box {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.diagram {
+  border: 1px solid #aaa;
+  min-height: 200px;
+  background-color: #f5f5f5;
+  padding: 10px;
+}
+
+.diagram .block {
+  margin: 5px 0;
+  background-color: #d0eaff;
+  border: 1px solid #339;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  font-size: 14px;
+}
+
+.diagram .unallocated {
+  background-color: #eee;
+  color: #999;
+  border-style: dashed;
+}
+
+.block-container {
+  border: 2px solid #333;
+  margin-bottom: 15px;
+  padding: 5px;
+  background: #fff;
+}
+
+.block-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #222;
+}
+
+.diagram .sub-block {
+  margin: 3px 0;
+  padding: 6px 10px;
+  font-size: 14px;
+  border: 1px solid #339;
+  background-color: #d0eaff;
+}
+
+.diagram .sub-block.unallocated {
+  background-color: #eee;
+  color: #999;
+  border-style: dashed;
+}

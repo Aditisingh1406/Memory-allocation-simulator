@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Memory Allocation Simulator</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Memory Allocation Simulator</h1>
+
+    <label for="blockSizes">Memory Block Sizes (comma-separated):</label>
+    <input type="text" id="blockSizes" placeholder="e.g. 100, 500, 200, 300, 600" />
+
+    <label for="processSizes">Process Sizes (comma-separated):</label>
+    <input type="text" id="processSizes" placeholder="e.g. 212, 417, 112, 426" />
+
+    <button onclick="runAllStrategies()">Allocate Memory</button>
+
+    <h2>Allocation Comparison</h2>
+    <table id="resultTable">
+      <thead>
+        <tr>
+          <th>Process No.</th>
+          <th>Process Size</th>
+          <th>First Fit</th>
+          <th>Best Fit</th>
+          <th>Worst Fit</th>
+        </tr>
+      </thead>
+      <tbody id="resultBody"></tbody>
+    </table>
+
+    <h2>Visualization</h2>
+    <div class="visual-section">
+      <div class="visual-box">
+        <h3>First Fit</h3>
+        <div id="firstFitDiagram" class="diagram"></div>
+      </div>
+      <div class="visual-box">
+        <h3>Best Fit</h3>
+        <div id="bestFitDiagram" class="diagram"></div>
+      </div>
+      <div class="visual-box">
+        <h3>Worst Fit</h3>
+        <div id="worstFitDiagram" class="diagram"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
